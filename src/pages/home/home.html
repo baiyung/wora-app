@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>豆瓣图书-推荐</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -20,7 +20,7 @@
 <ion-list>
   <button
     ion-item
-    *ngFor="let film of (films | async)?.results"
+    *ngFor="let film of (films | async)?.books"
     (click)="openDetails(film)"
   >
     {{ film.title }}

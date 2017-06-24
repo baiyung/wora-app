@@ -12,13 +12,22 @@
 
 </ion-header>
 
-
 <ion-content padding>
-
   <ion-card>
     <ion-card-content>
-      {{ film.opening_crawl }}
+	 名称: {{ film.title }}
+    </ion-card-content>
+    <ion-card-content>
+	 作者: {{ film.author }}
+    </ion-card-content>
+	<ion-card-content>
+	出版社 ： {{ film.publisher }}
+    </ion-card-content>
+	<ion-card-content>
+	作者简介 ： {{ film.author_intro }}
+    </ion-card-content>
+	<ion-card-content>
+    图书简介：{{ film.summary }}
     </ion-card-content>
   </ion-card>
-
 </ion-content>
